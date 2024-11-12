@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cOdiNG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="grid">
+		<div class="compress" id="my-element">
+			CRACK THE CODE
+		</div>
+		<div class="squish">ADJUST YOUR SCREEN TO THE RIGHT SIZE </div>
+		<div>
+            <a href="step1.html" class="compress" style="text-decoration: underline 2px">START CRACKING</a>
+		</div>
+	</div>
+
+    <script>
+        var myElement = document.querySelector('#my-element');
+
+		function randomizeValues() {
+			var randomNumber1 = Math.random();
+			var randomNumberAdjusted1 = randomNumber1*500;
+			var randomNumberRounded1 = Math.round(randomNumberAdjusted1); 
+			console.log(randomNumberRounded1); 
+
+			var randomNumberRounded2 = Math.round(Math.random()*500);
+			console.log(randomNumberRounded2);
+
+			myElement.style.fontVariationSettings = `"SQSH" ${randomNumberRounded1}, "SHAP" ${randomNumberRounded2}`;
+		}
+
+		setInterval(randomizeValues, 500);
+	</script>
+</body>
+</html>

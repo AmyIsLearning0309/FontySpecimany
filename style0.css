@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "cOdiNG";
+}
+
+body {
+    background-image: url('https://i.pinimg.com/originals/06/60/ef/0660efe82fa3da42ed56eef013171835.gif'); /*Image from https://tenor.com/view/code-coding-programming-computer-science-programming-language-gif-16596559?utm_source=share-button&utm_medium=Social&utm_content=pinterest*/
+    background-size: contain;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: #000000;
+}
+
+@font-face {
+    font-family: "cOdiNG";
+    src: url("cOdiNGVF.ttf");
+}
+
+h1 {
+    font-size: 80px;
+    font-variation-settings: "SQSH" 50;
+
+}
+
+h2 {
+    font-size: 60px;
+    font-variation-settings: "SQSH" 150;
+}
+
+h3 {
+    font-size: 60px;
+    font-variation-settings: "SQSH" 250;
+}
+
+p {
+    transition: font-variation-settings .5s;
+    font: 20px;
+}
+.grid {
+    display: grid;
+    grid-auto-columns: 1fr;
+    width: 100vw;
+    background-color:transparent;
+}
+ .grid div {
+    height: auto;
+    background-color:transparent;
+
+ }
+
+.flex-parent {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    background-color:transparent;
+}
+.flex-parent :hover {
+    color: #ffffff; 
+    text-shadow: 0 0 10px #fff;
+    transition-duration: 1.5s;
+}
+
+.flex-child {
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.flex-child1 {
+    padding: 0;
+    flex-grow: 1;
+    text-align: center;
+    background-image: url('Untitled design.gif');;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexbox div {
+    flex-grow: 1;
+}
+
+button.hidden-bar {
+    border: 1px dotted white;
+    border-radius: 25%;
+    cursor: zoom-in;
+    text-align: right;
+    padding: 10px;
+    background-color: transparent;
+}
+button.hidden-bar:hover {
+    background-color: rgb(31, 199, 39);
+    border-color: rgb(66, 249, 75); 
+}
+.hidden-navigation {
+    display: none;
+    background-color: transparent;
+    text-align: center;
+    transition: 3s;
+    padding: 10px;
+    height: 400px;
+}
+
+.show {
+    display: block;
+}
+
+.button {
+    border: 1px dotted #ffffff;
+    border-radius: 8px;
+    cursor: zoom-in;
+    text-decoration: none;
+    background-color: transparent;
+    padding: 5px;
+}
+.button:hover {
+    background-color: rgb(31, 199, 39);
+    border-color: rgb(66, 249, 75);
+}
+
+a {
+    color: #000000;
+}
+
+.squish1 {
+    font-variation-settings: "SQSH" 500, "SHAP" 500;
+}
+
+.font {
+    color: #000000;
+}
+
+.font:hover {
+    color: rgb(76, 252, 76);
+    text-shadow: 0 0 10px rgb(76, 252, 76);
+}

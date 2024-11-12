@@ -1,0 +1,134 @@
+* {
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+    font-family: "cOdiNG";
+    color: #ffffff;
+    text-shadow: 0 0 10px #fff;
+}
+
+body {
+    background-color: black;
+}
+
+@font-face {
+    font-family: "cOdiNG";
+    src: url("cOdiNGVF.ttf");
+}
+
+.compress {
+    font-family: "cOdiNG";
+    font-variation-settings: "SQSH" 0, "SHAP" 0;
+    font-size: 20px;
+    transition: font-variation-settings .5s;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    width: 100vw;
+    height: 100vh;
+}
+.grid-child {
+    padding: 10px;
+}
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    padding: 1px;
+    width: 100vw;
+    height: 100vh;
+}
+.flex-child {
+    flex-grow: 1;
+    transition: flex-grow .5s;
+    max-width: 800px;
+}
+
+.reveal {
+    font-variation-settings: "SQSH" 100;
+    font-size: 30px;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 10px;
+    cursor: zoom-in;
+    border: 1px dotted #ffffff;
+}
+
+.reveal:hover {
+    font-variation-settings: "SQSH" 500;
+    transition: 1s;
+    background-color: rgb(7, 43, 11);
+    color: white;
+    text-shadow: 0 0 10px #fff;
+}
+
+.next {
+    font-size: 20px;
+    font-variation-settings: "SHAP" 500;
+    margin-top: auto;
+    text-decoration: none;
+    text-shadow: 0 0 10px #000000;;
+}
+
+.next:hover {
+    font-variation-settings: "SHAP" 0;
+    transition: 1s;
+}
+
+.hidden-button {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 100px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: zoom-in;
+    transition: background-color 0.3s;
+}
+
+.hidden-button:hover {
+    background-color: rgb(31, 199, 39);
+}
+
+.hidden-button:active {
+    background-color: rgb(31, 199, 39);
+}
+
+/* GPT Written */
+.hidden-button span {
+    display: none;
+}
+
+.hidden-button:hover span {
+    display: inline;
+    color: rgb(255, 255, 255);
+}
+
+.progress {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    width: 100vw;
+}
+.progree div {
+    flex-grow: 1;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+a:hover {
+    color: rgb(31, 199, 39);
+    text-shadow: 0 0 10px rgb(93, 250, 79);
+    cursor: zoom-in;
+}

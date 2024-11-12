@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="progress">
+        <div><a href="step1.html">GO BACK</a></div>
+        <div><a href="homepage.html" style="text-align: center;">HOME PAGE</a></div>
+        <div><a href="step3.html">SKIP</a></div>
+    </div>
+    <div class="grid">
+        <div class="grid-child">
+            <div class="flex-parent">
+                <div class="flex-child"></div>
+                <div class="flex-child"><button onclick="toggleMyVariableClass1()" class="second">CLICK ME!</button></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+            </div>
+        </div>
+
+        <div class="grid-child">
+            <div class="flex-parent">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child" style="width: 240px; font-size: 30px;text-align: center;">
+                    <p class="shap" id="my-element">THIS TEXT IS NOT READABLE UNTIL YOU CLICK THE RIGHT BUTTON. NOW YOU ARE SEEING THE MESSAGE.CLICK ON THIS  <a href="step3.html"  class="special">!SPECIAL! </a>CHARACTER TO CONTINUE TO THE NEXT STEP.</p>
+                </div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+            </div>
+        </div>
+
+        <div class="grid-child">
+            <div class="flex-parent">
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"></div>
+                <div class="flex-child"><div class="flex-child"><button onclick="toggleMyVariableClass()" class="first">CLICK ME!!!</button></div>
+                <div class="flex-child"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        //From GD with GD
+		function toggleMyVariableClass() {
+			var myElement = document.querySelector('#my-element');
+			myElement.classList.toggle('squish');
+			console.log(myElement.classList);
+		}
+
+         //From GD with GD
+		function toggleMyVariableClass1() {
+			var myElement = document.querySelector('#my-element');
+			myElement.classList.toggle('squish1');
+			console.log(myElement.classList);
+		}
+	</script>
+</body>
+</html>
