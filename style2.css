@@ -3,14 +3,16 @@
     padding: 0 auto;
     box-sizing: border-box;
     font-family: "cOdiNG";
-    color: #ffffff;
+    color: white;
     text-shadow: 0 0 10px #fff;
 }
 
 body {
+    background-image: url('https://i.pinimg.com/originals/6f/7c/a6/6f7ca61aa4876d76eeb3fc1279c5f233.gif');
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: black;
 }
-
 @font-face {
     font-family: "cOdiNG";
     src: url("cOdiNGVF.ttf");
@@ -25,11 +27,11 @@ body {
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px;
     padding: 10px;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
 }
 .grid-child {
     padding: 10px;
@@ -37,80 +39,59 @@ body {
 
 .flex-parent {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1px;
     padding: 1px;
     width: 100vw;
-    height: 100vh;
+    height: 30vh;
 }
 .flex-child {
-    flex-grow: 1;
-    transition: flex-grow .5s;
-    max-width: 800px;
-}
-
-.reveal {
-    font-variation-settings: "SQSH" 100;
-    font-size: 30px;
-    background-color: transparent;
-    border-radius: 5px;
     padding: 10px;
-    text-align: center;
-    margin-left: 10px;
-    cursor: zoom-in;
-    border: 1px dotted #ffffff;
-}
-
-.reveal:hover {
-    font-variation-settings: "SQSH" 500;
-    transition: 1s;
-    background-color: rgb(7, 43, 11);
-    color: white;
-    text-shadow: 0 0 10px #fff;
-}
-
-.next {
-    font-size: 20px;
-    font-variation-settings: "SHAP" 500;
-    margin-top: auto;
-    text-decoration: none;
-    text-shadow: 0 0 10px #000000;;
-}
-
-.next:hover {
-    font-variation-settings: "SHAP" 0;
-    transition: 1s;
-}
-
-.hidden-button {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    width: 100px;
-    height: 50px;
+    flex-grow: 1;
     background-color: transparent;
-    border: none;
+}
+
+.shap {
+    font-variation-settings: "SQSH" 0, "SHAP" 500;
+    transition: font-variation-settings .5s;
+}
+
+.squish {
+    font-variation-settings: "SQSH" 250, "SHAP" 500;
+}
+
+.squish1 {
+    font-variation-settings: "SQSH" 500, "SHAP" 500;
+}
+
+.first {
+    border: 1px dotted  rgb(126, 255, 133);
+    text-shadow: 0 0 10px rgb(126, 255, 133);
+    color:  rgb(126, 255, 133);
+    font-size: 80px;
+    font-variation-settings: "SQSH" 250, "SHAP" 500;
+    background-color: transparent;
     border-radius: 5px;
+}
+.first:hover {
+    background-color:  rgb(24, 59, 26);
+    transition-duration: 1s;
     cursor: zoom-in;
-    transition: background-color 0.3s;
 }
 
-.hidden-button:hover {
-    background-color: rgb(31, 199, 39);
+.second {
+    border: 1px dotted  rgb(126, 255, 133);
+    text-shadow: 0 0 10px rgb(126, 255, 133);
+    color:  rgb(126, 255, 133);
+    background-color: transparent;
+    font-size: 20px;
+    font-variation-settings: "SQSH" 500, "SHAP" 500;
+    border-radius: 5px;
 }
-
-.hidden-button:active {
-    background-color: rgb(31, 199, 39);
-}
-
-/* GPT Written */
-.hidden-button span {
-    display: none;
-}
-
-.hidden-button:hover span {
-    display: inline;
-    color: rgb(255, 255, 255);
+.second:hover {
+    background-color:  rgb(24, 59, 26);
+    transition-duration: 1s;
+    cursor: zoom-in;
 }
 
 .progress {
@@ -124,11 +105,20 @@ body {
 }
 
 a {
-    color: rgb(255, 255, 255);
-    text-shadow: 0 0 10px rgb(255, 255, 255);
+    color: rgb(11, 33, 9);
+    text-shadow: 0 0 10px rgb(25, 37, 24);
 }
 a:hover {
     color: rgb(31, 199, 39);
     text-shadow: 0 0 10px rgb(93, 250, 79);
     cursor: zoom-in;
+}
+.special {
+    text-decoration: none;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+.special:hover {
+    color: rgb(83, 255, 86);
+    text-shadow: 0 0 10px rgb(53, 234, 56);
 }
